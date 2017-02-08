@@ -6,7 +6,7 @@
  */
 
 import React, {Component} from 'react'
-import BlockInput from '../block/Block/BlockInput'
+import BlockInput from '../block/BlockInput'
 import Block from '../block/Block'
 import CloseIcon from './Close'
 import styled from 'styled-components'
