@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components'
-import insertDataBlock from '../../utils/insertDataBlock'
+import insertDataBlock from './insertDataBlock'
 import getVideoUrl from './getVideoUrl'
 
 export default class extends Component {
