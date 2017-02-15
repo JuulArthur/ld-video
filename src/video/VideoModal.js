@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-import icons from '../../components/Icons/'
 import styled from 'styled-components'
 import insertDataBlock from '../../utils/insertDataBlock'
 import getVideoUrl from './getVideoUrl'
