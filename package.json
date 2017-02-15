@@ -1,6 +1,6 @@
 {
   "name": "ld-video",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Last Draft video plugin",
   "main": "lib/video/plugin.js",
   "scripts": {
