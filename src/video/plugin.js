@@ -7,9 +7,11 @@
 
 import VideoButton from './VideoButton'
 import VideoBlock from './VideoBlock'
+import VideoModal from './VideoModal'
 
 export default {
   type: 'video',
   button: VideoButton,
-  block: VideoBlock
+  block: VideoBlock,
+  modal: VideoModal
 }
