@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components'
-import insertDataBlock from './insertDataBlock'
 import getVideoUrl from './getVideoUrl'
 
 export default class extends Component {
@@ -26,13 +25,13 @@ export default class extends Component {
   }
 
   submitUrl (src) {
+    const {onChange, insertDataBlock} = this.props
     let videoSrc = getVideoUrl(src)
     if (videoSrc === undefined) { return }
 
     const data = {src: videoSrc, type: 'video'}
-    this.props.onChange(insertDataBlock(this.props.editorState, data))
+    onChange(insertDataBlock(this.props.editorState, data))
   }
-
 
   onSubmit (event) {
     event.preventDefault()
