@@ -55,7 +55,7 @@ export default class extends Component {
 
   render () {
     return (
-      <div style={{whiteSpace: 'nowrap'}}>
+      <VideoModalWrapper>
         <VideoModalInput
           className='ld-video-modal-input'
           ref='textInput'
@@ -90,10 +90,15 @@ export default class extends Component {
             </svg>
           </VideoModalButton>
         </VideoModalButtonWrapper>
-      </div>
+      </VideoModalWrapper>
     )
   }
 }
+
+const VideoModalWrapper = styled.div`
+  whiteSpace: nowrap;
+  width: 360px;
+`
 
 const VideoModalInput = styled.input`
   background-color: transparent;
@@ -104,7 +109,7 @@ const VideoModalInput = styled.input`
   line-height: 1.2;
   margin: 0;
   padding: 16px;
-  width: 300px;
+  width: 260px;
 
   &:focus {
     outline: none;
