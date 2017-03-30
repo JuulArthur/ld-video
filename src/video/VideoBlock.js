@@ -40,7 +40,7 @@ export default class extends Component {
 
           <BlockInput
             placeholder='Caption'
-            value={this.props.data.caption}
+            value={this.props.data.caption || ''}
             onChange={::this.handleCaptionChange} />
         </Block>
       </BlockWrapper>
