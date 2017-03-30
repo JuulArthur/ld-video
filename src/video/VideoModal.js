@@ -29,7 +29,7 @@ export default class extends Component {
     let videoSrc = getVideoUrl(src)
     if (videoSrc === undefined) { return }
 
-    const data = {src: videoSrc, type: 'video'}
+    const data = {src: videoSrc, type: 'video', caption: ''}
     onChange(insertDataBlock(this.props.editorState, data))
   }
 
