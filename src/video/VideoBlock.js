@@ -10,10 +10,6 @@ import BlockInput from './BlockInput'
 import styled from 'styled-components'
 
 export default class extends Component {
-  handleCaptionChange (event) {
-    this.props.container.updateData({caption: event.target.value})
-  }
-
   render () {
     return (
       <BlockWrapper className='ld-block-wrapper'>
@@ -37,11 +33,6 @@ export default class extends Component {
                     frameBorder='0'
                     allowFullScreen />
           </VideoBlockWrapper>
-
-          <BlockInput
-            placeholder='Caption'
-            value={this.props.data.caption}
-            onChange={::this.handleCaptionChange} />
         </Block>
       </BlockWrapper>
     )
