@@ -63,7 +63,7 @@ export default class extends Component {
           onChange={::this.onUrlChange}
           value={this.state.url}
           onKeyDown={::this.onKeyDown}
-          placeholder='Legg in url til video og trykk enter' />
+          placeholder='Legg inn lenke til Youtube eller Vimeo' />
 
         <VideoModalButtonWrapper className='ld-video-modal-button-wrapper'>
           <VideoModalButton
